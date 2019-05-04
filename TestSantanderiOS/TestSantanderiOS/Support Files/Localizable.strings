@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  TestSantanderiOS
+
+  Created by Renan Trapp on 04/05/19.
+  Copyright © 2019 Renan Trapp. All rights reserved.
+*/
+
+//InvestimetViewController
+"Investiment" = "Investimento";
+
+//ContactViewController
+"Contact" = "Contato";
+"ContactLikeToReceiveEmail" = "Gostaria de cadastrar meu email";
