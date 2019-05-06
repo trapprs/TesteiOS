@@ -25,13 +25,19 @@ final class ApplicationCoordinator: Coordinator {
     
     @discardableResult
     func start() -> Self {
-        let contactCoordinator = ContactCoordinator(presenter: rootViewController,
-                                                  navigationDelegate: self)
-        window.makeKeyAndVisible()
-        window.rootViewController = contactCoordinator.presenter
-        contactCoordinator.start()
-
+        loadContact()
+        
         return self
+    }
+    
+    private func loadContact() {        
+        let contactCoordinator = ContactCoordinator(view: rootViewController,
+                                                    navigationDelegate: self)
+        window.rootViewController = contactCoordinator.view
+        window.makeKeyAndVisible()
+        
+        contactCoordinator.start()
+        add(coordinator: contactCoordinator)
     }
 }
 

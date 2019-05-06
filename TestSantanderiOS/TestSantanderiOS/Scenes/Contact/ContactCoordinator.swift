@@ -12,7 +12,7 @@ protocol ContactCoordinatorNavigationDelegate: AnyObject {}
 
 final class ContactCoordinator: Coordinator {
     var coordinators: [Coordinator] = []
-    let presenter: UINavigationController
+    let view: UINavigationController
     private weak var navigationDelegate: ContactCoordinatorNavigationDelegate?
     
     @discardableResult
@@ -22,16 +22,22 @@ final class ContactCoordinator: Coordinator {
         return self
     }
     
-    init(presenter: UINavigationController,
+    init(view: UINavigationController,
          navigationDelegate: ContactCoordinatorNavigationDelegate? = nil) {
-        self.presenter = presenter
+        self.view = view
         self.navigationDelegate = navigationDelegate
     }
     
     private func openContact() {
-        let contactFormViewController = ContactFormViewController()
-        presenter.pushViewController(contactFormViewController, animated: true)
-        
-        add(coordinator: self)
+        let view  = ContactFormViewController()
+        let presenter = ContactFormPresenter()
+        let interactor = ContactFormInteractor()
+
+        view.presenter = presenter
+        presenter.view = view
+        presenter.interactor = interactor
+        interactor.presenter = presenter
+
+        self.view.pushViewController(view, animated: true)
     }
 }

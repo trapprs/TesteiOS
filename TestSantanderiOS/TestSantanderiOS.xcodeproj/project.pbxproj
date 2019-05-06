@@ -12,7 +12,6 @@
 		E06D95F6227D353900EC91E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06D95F4227D353900EC91E9 /* LaunchScreen.storyboard */; };
 		E06D9601227D353900EC91E9 /* TestSantanderiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D9600227D353900EC91E9 /* TestSantanderiOSTests.swift */; };
 		E06D960E227DA86F00EC91E9 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D960D227DA86F00EC91E9 /* Dynamic.swift */; };
-		E06D9611227DA8AF00EC91E9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D9610227DA8AF00EC91E9 /* Coordinator.swift */; };
 		E06D9614227DA91300EC91E9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E06D9613227DA91300EC91E9 /* Localizable.strings */; };
 		E06D9618227DABA200EC91E9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D9617227DABA200EC91E9 /* Service.swift */; };
 		E06D9623227DAC5D00EC91E9 /* DINEngschriftStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = E06D9620227DAC5500EC91E9 /* DINEngschriftStd.otf */; };
@@ -29,9 +28,12 @@
 		E06D9638227DB03F00EC91E9 /* NavigationControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D9637227DB03F00EC91E9 /* NavigationControllerView.swift */; };
 		E06D963A227DB05F00EC91E9 /* NavigationControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E06D9639227DB05F00EC91E9 /* NavigationControllerView.xib */; };
 		E06D963C227DB2EE00EC91E9 /* FontBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D963B227DB2EE00EC91E9 /* FontBook.swift */; };
-		E06D963E227DB83800EC91E9 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D963D227DB83800EC91E9 /* ApplicationCoordinator.swift */; };
-		E06D9640227DB8C300EC91E9 /* ContactCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D963F227DB8C300EC91E9 /* ContactCoordinator.swift */; };
-		E06D9642227DB8DE00EC91E9 /* ContactFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D9641227DB8DE00EC91E9 /* ContactFormViewModel.swift */; };
+		E06D9644227DCEF600EC91E9 /* ContactFormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D9643227DCEF600EC91E9 /* ContactFormPresenter.swift */; };
+		E06D9646227DD01B00EC91E9 /* ContactFormInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D9645227DD01B00EC91E9 /* ContactFormInteractor.swift */; };
+		E06D964C227DECCA00EC91E9 /* ContactProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D964B227DECCA00EC91E9 /* ContactProtocol.swift */; };
+		E06D964E227FCB2E00EC91E9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D964D227FCB2E00EC91E9 /* Coordinator.swift */; };
+		E06D9650227FCB4800EC91E9 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D964F227FCB4800EC91E9 /* ApplicationCoordinator.swift */; };
+		E06D9653227FCDE400EC91E9 /* ContactCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D9652227FCDE400EC91E9 /* ContactCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +56,6 @@
 		E06D9600227D353900EC91E9 /* TestSantanderiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSantanderiOSTests.swift; sourceTree = "<group>"; };
 		E06D9602227D353900EC91E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E06D960D227DA86F00EC91E9 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
-		E06D9610227DA8AF00EC91E9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		E06D9613227DA91300EC91E9 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E06D9617227DABA200EC91E9 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		E06D961A227DAC5500EC91E9 /* DINNeuzeitGroteskStd-BdCond.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNeuzeitGroteskStd-BdCond.otf"; sourceTree = "<group>"; };
@@ -71,9 +72,12 @@
 		E06D9637227DB03F00EC91E9 /* NavigationControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerView.swift; sourceTree = "<group>"; };
 		E06D9639227DB05F00EC91E9 /* NavigationControllerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationControllerView.xib; sourceTree = "<group>"; };
 		E06D963B227DB2EE00EC91E9 /* FontBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontBook.swift; sourceTree = "<group>"; };
-		E06D963D227DB83800EC91E9 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
-		E06D963F227DB8C300EC91E9 /* ContactCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCoordinator.swift; sourceTree = "<group>"; };
-		E06D9641227DB8DE00EC91E9 /* ContactFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewModel.swift; sourceTree = "<group>"; };
+		E06D9643227DCEF600EC91E9 /* ContactFormPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormPresenter.swift; sourceTree = "<group>"; };
+		E06D9645227DD01B00EC91E9 /* ContactFormInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormInteractor.swift; sourceTree = "<group>"; };
+		E06D964B227DECCA00EC91E9 /* ContactProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactProtocol.swift; sourceTree = "<group>"; };
+		E06D964D227FCB2E00EC91E9 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E06D964F227FCB4800EC91E9 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		E06D9652227FCDE400EC91E9 /* ContactCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactCoordinator.swift; path = Contact/ContactCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +119,12 @@
 		E06D95EA227D353700EC91E9 /* TestSantanderiOS */ = {
 			isa = PBXGroup;
 			children = (
-				E06D9616227DAB8400EC91E9 /* Service */,
+				E06D9651227FCB6000EC91E9 /* Application */,
 				E06D9615227DA97500EC91E9 /* Components */,
+				E06D9647227DD0E300EC91E9 /* Entities */,
 				E06D960C227DA84B00EC91E9 /* Helpers */,
 				E06D960F227DA88E00EC91E9 /* Protocols */,
+				E06D9616227DAB8400EC91E9 /* Services */,
 				E06D9612227DA8C500EC91E9 /* Scenes */,
 				E06D960B227D355000EC91E9 /* Support Files */,
 			);
@@ -138,12 +144,10 @@
 			isa = PBXGroup;
 			children = (
 				E06D9619227DAC1000EC91E9 /* Fonts */,
-				E06D95EB227D353700EC91E9 /* AppDelegate.swift */,
 				E06D95F2227D353900EC91E9 /* Assets.xcassets */,
 				E06D95F4227D353900EC91E9 /* LaunchScreen.storyboard */,
 				E06D95F7227D353900EC91E9 /* Info.plist */,
 				E06D9613227DA91300EC91E9 /* Localizable.strings */,
-				E06D963D227DB83800EC91E9 /* ApplicationCoordinator.swift */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -160,7 +164,8 @@
 		E06D960F227DA88E00EC91E9 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				E06D9610227DA8AF00EC91E9 /* Coordinator.swift */,
+				E06D964D227FCB2E00EC91E9 /* Coordinator.swift */,
+				E06D964B227DECCA00EC91E9 /* ContactProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 		E06D9612227DA8C500EC91E9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E06D9652227FCDE400EC91E9 /* ContactCoordinator.swift */,
 				E06D962C227DAE4D00EC91E9 /* Contact */,
 			);
 			path = Scenes;
@@ -181,12 +187,12 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		E06D9616227DAB8400EC91E9 /* Service */ = {
+		E06D9616227DAB8400EC91E9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				E06D9617227DABA200EC91E9 /* Service.swift */,
 			);
-			path = Service;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		E06D9619227DAC1000EC91E9 /* Fonts */ = {
@@ -208,20 +214,12 @@
 		E06D962C227DAE4D00EC91E9 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
-				E06D963F227DB8C300EC91E9 /* ContactCoordinator.swift */,
-				E06D962D227DAE7B00EC91E9 /* Form */,
-			);
-			path = Contact;
-			sourceTree = "<group>";
-		};
-		E06D962D227DAE7B00EC91E9 /* Form */ = {
-			isa = PBXGroup;
-			children = (
 				E06D9633227DAEC100EC91E9 /* ContactFormViewController.xib */,
 				E06D9632227DAEC000EC91E9 /* ContactFormViewController.swift */,
-				E06D9641227DB8DE00EC91E9 /* ContactFormViewModel.swift */,
+				E06D9643227DCEF600EC91E9 /* ContactFormPresenter.swift */,
+				E06D9645227DD01B00EC91E9 /* ContactFormInteractor.swift */,
 			);
-			path = Form;
+			path = Contact;
 			sourceTree = "<group>";
 		};
 		E06D9636227DAFF700EC91E9 /* NavigationControllerView */ = {
@@ -231,6 +229,22 @@
 				E06D9639227DB05F00EC91E9 /* NavigationControllerView.xib */,
 			);
 			path = NavigationControllerView;
+			sourceTree = "<group>";
+		};
+		E06D9647227DD0E300EC91E9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E06D9651227FCB6000EC91E9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E06D964F227FCB4800EC91E9 /* ApplicationCoordinator.swift */,
+				E06D95EB227D353700EC91E9 /* AppDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,15 +360,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E06D95EC227D353700EC91E9 /* AppDelegate.swift in Sources */,
+				E06D964C227DECCA00EC91E9 /* ContactProtocol.swift in Sources */,
+				E06D9644227DCEF600EC91E9 /* ContactFormPresenter.swift in Sources */,
 				E06D9618227DABA200EC91E9 /* Service.swift in Sources */,
 				E06D960E227DA86F00EC91E9 /* Dynamic.swift in Sources */,
 				E06D9634227DAEC100EC91E9 /* ContactFormViewController.swift in Sources */,
-				E06D9640227DB8C300EC91E9 /* ContactCoordinator.swift in Sources */,
+				E06D964E227FCB2E00EC91E9 /* Coordinator.swift in Sources */,
+				E06D9653227FCDE400EC91E9 /* ContactCoordinator.swift in Sources */,
+				E06D9646227DD01B00EC91E9 /* ContactFormInteractor.swift in Sources */,
 				E06D9638227DB03F00EC91E9 /* NavigationControllerView.swift in Sources */,
 				E06D963C227DB2EE00EC91E9 /* FontBook.swift in Sources */,
-				E06D9642227DB8DE00EC91E9 /* ContactFormViewModel.swift in Sources */,
-				E06D9611227DA8AF00EC91E9 /* Coordinator.swift in Sources */,
-				E06D963E227DB83800EC91E9 /* ApplicationCoordinator.swift in Sources */,
+				E06D9650227FCB4800EC91E9 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +527,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95WF9DSUCR;
 				INFOPLIST_FILE = "$(SRCROOT)/TestSantanderiOS/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,6 +546,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95WF9DSUCR;
 				INFOPLIST_FILE = "$(SRCROOT)/TestSantanderiOS/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
