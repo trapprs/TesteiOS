@@ -12,7 +12,7 @@ enum DINFont: String {
     case regular = "DINPro-Regular"
     case medium = "DINPro-Medium"
     
-    func of(size: CGFloat) -> UIFont? {
-        return UIFont(name: self.rawValue, size: size)
+    func of(size: CGFloat) -> UIFont {
+        return UIFont(name: self.rawValue, size: size)!
     }
 }

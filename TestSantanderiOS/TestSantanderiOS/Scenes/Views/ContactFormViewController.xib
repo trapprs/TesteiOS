@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactFormViewController" customModule="TestSantanderiOS" customModuleProvider="target">
             <connections>
                 <outlet property="navigationControllerView" destination="hA8-Sv-mWb" id="x23-Tp-t3M"/>
+                <outlet property="segmentedControlView" destination="ZGQ-io-FKk" id="Ov9-By-lLA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,11 +21,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGQ-io-FKk">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGQ-io-FKk" customClass="SegmentedControlView" customModule="TestSantanderiOS" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="610" width="375" height="57"/>
                     <color key="backgroundColor" red="0.81568627449999997" green="0.0078431372550000003" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="57" id="Ebq-Db-PC4"/>
+                        <constraint firstAttribute="height" constant="60" id="Ebq-Db-PC4"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hA8-Sv-mWb" customClass="NavigationControllerView" customModule="TestSantanderiOS" customModuleProvider="target">

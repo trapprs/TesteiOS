@@ -34,6 +34,9 @@
 		E06D964E227FCB2E00EC91E9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D964D227FCB2E00EC91E9 /* Coordinator.swift */; };
 		E06D9650227FCB4800EC91E9 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D964F227FCB4800EC91E9 /* ApplicationCoordinator.swift */; };
 		E06D9653227FCDE400EC91E9 /* ContactCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D9652227FCDE400EC91E9 /* ContactCoordinator.swift */; };
+		E06D9657227FD52200EC91E9 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D9656227FD52200EC91E9 /* SegmentedControlView.swift */; };
+		E06D9659227FD52E00EC91E9 /* SegmentedControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E06D9658227FD52E00EC91E9 /* SegmentedControlView.xib */; };
+		E0918323227FDAFB00483410 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0918322227FDAFB00483410 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		E06D964D227FCB2E00EC91E9 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		E06D964F227FCB4800EC91E9 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		E06D9652227FCDE400EC91E9 /* ContactCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactCoordinator.swift; path = Contact/ContactCoordinator.swift; sourceTree = "<group>"; };
+		E06D9656227FD52200EC91E9 /* SegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
+		E06D9658227FD52E00EC91E9 /* SegmentedControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentedControlView.xib; sourceTree = "<group>"; };
+		E0918322227FDAFB00483410 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,7 @@
 			children = (
 				E06D960D227DA86F00EC91E9 /* Dynamic.swift */,
 				E06D963B227DB2EE00EC91E9 /* FontBook.swift */,
+				E0918322227FDAFB00483410 /* UIColor+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -173,6 +180,7 @@
 		E06D9612227DA8C500EC91E9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E06D9654227FD4C300EC91E9 /* Views */,
 				E06D9652227FCDE400EC91E9 /* ContactCoordinator.swift */,
 				E06D962C227DAE4D00EC91E9 /* Contact */,
 			);
@@ -182,6 +190,7 @@
 		E06D9615227DA97500EC91E9 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E06D9655227FD4E600EC91E9 /* SegmentedControlView */,
 				E06D9636227DAFF700EC91E9 /* NavigationControllerView */,
 			);
 			path = Components;
@@ -214,7 +223,6 @@
 		E06D962C227DAE4D00EC91E9 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
-				E06D9633227DAEC100EC91E9 /* ContactFormViewController.xib */,
 				E06D9632227DAEC000EC91E9 /* ContactFormViewController.swift */,
 				E06D9643227DCEF600EC91E9 /* ContactFormPresenter.swift */,
 				E06D9645227DD01B00EC91E9 /* ContactFormInteractor.swift */,
@@ -245,6 +253,23 @@
 				E06D95EB227D353700EC91E9 /* AppDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		E06D9654227FD4C300EC91E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E06D9633227DAEC100EC91E9 /* ContactFormViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E06D9655227FD4E600EC91E9 /* SegmentedControlView */ = {
+			isa = PBXGroup;
+			children = (
+				E06D9656227FD52200EC91E9 /* SegmentedControlView.swift */,
+				E06D9658227FD52E00EC91E9 /* SegmentedControlView.xib */,
+			);
+			path = SegmentedControlView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +366,7 @@
 				E06D9624227DAC5D00EC91E9 /* DINMittelschriftStd.otf in Resources */,
 				E06D962A227DAC5D00EC91E9 /* DINPro-Medium.otf in Resources */,
 				E06D9628227DAC5D00EC91E9 /* DINPro-Bold.otf in Resources */,
+				E06D9659227FD52E00EC91E9 /* SegmentedControlView.xib in Resources */,
 				E06D9626227DAC5D00EC91E9 /* DINNeuzeitGroteskStd-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,7 +385,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0918323227FDAFB00483410 /* UIColor+Extension.swift in Sources */,
 				E06D95EC227D353700EC91E9 /* AppDelegate.swift in Sources */,
+				E06D9657227FD52200EC91E9 /* SegmentedControlView.swift in Sources */,
 				E06D964C227DECCA00EC91E9 /* ContactProtocol.swift in Sources */,
 				E06D9644227DCEF600EC91E9 /* ContactFormPresenter.swift in Sources */,
 				E06D9618227DABA200EC91E9 /* Service.swift in Sources */,

@@ -16,6 +16,11 @@ final class ContactFormViewController: UIViewController {
             navigationControllerView.configure(title: NSLocalizedString("Contact", comment: ""))
         }
     }
+    @IBOutlet weak var segmentedControlView: SegmentedControlView! {
+        didSet {
+            segmentedControlView.configure(segmentedAt: .contact)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
